@@ -94,7 +94,7 @@ export default function LandingPage() {
               { title: "Dev-Log", desc: "Dokumentiere deine Coding-Sessions. Erstellt Commits und Jira-Tickets.", icon: <Code />, color: "text-green-400" },
               { title: "Brain Dump", desc: "Chaos im Kopf? Aurus sortiert deine Gedanken nach Relevanz und Priorität.", icon: <Brain />, color: "text-purple-400" },
               { title: "Translator", desc: "Echtzeit-Übersetzung in 12 Sprachen mit perfekter Grammatik.", icon: <Languages />, color: "text-pink-400" },
-              { title: "Mental Mirror", desc: "Dein Voice-Journal. Reflektiere den Tag und erhalte KI-gestützte Insights.", icon: <Mic />, color: "text-indigo-400" }
+              { title: "Letter for myself", desc: "Dein Voice-Journal. Reflektiere den Tag und erhalte KI-gestützte Insights.", icon: <Mic />, color: "text-indigo-400" }
             ].map((agent, i) => (
               <div key={i} className="group p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass hover:border-voice-primary/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation">
                 <div className={`${agent.color} mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform`}>
