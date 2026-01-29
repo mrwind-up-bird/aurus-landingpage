@@ -36,7 +36,7 @@ export default function Datenschutz() {
             <p className="text-slate-300 leading-relaxed mb-4">
               <strong className="text-white">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br />
               Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
-              können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+              können Sie dem Abschnitt &ldquo;Hinweis zur Verantwortlichen Stelle&rdquo; in dieser Datenschutzerklärung entnehmen.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -137,7 +137,7 @@ export default function Datenschutz() {
 
             <h3 className="text-xl font-bold mb-3 text-white">Privacy by Design</h3>
             <p className="text-slate-300 leading-relaxed mb-4">
-              Die Aurus Desktop-Anwendung wurde mit dem Grundsatz "Privacy by Design" entwickelt:
+              Die Aurus Desktop-Anwendung wurde mit dem Grundsatz &quot;Privacy by Design&quot; entwickelt:
             </p>
             <ul className="list-disc list-inside text-slate-300 space-y-2 mb-4">
               <li><strong className="text-white">Keine Datenspeicherung auf unseren Servern:</strong> Aurus speichert keine Audiodaten oder Transkripte auf externen Servern.</li>
