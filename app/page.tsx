@@ -93,9 +93,9 @@ export default function LandingPage() {
           <img
             src="/images/aurus-hero-background.png"
             alt="Aurus Hero Background"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/50 via-[#020617]/70 to-[#020617]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/40 via-[#020617]/60 to-[#020617]" />
         </div>
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-[10px] sm:text-xs font-bold mb-6 sm:mb-8 animate-fade-in">
