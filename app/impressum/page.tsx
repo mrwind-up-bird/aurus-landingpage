@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Impressum() {
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-50">
+    <div className="min-h-screen bg-voice-bg text-slate-50">
       {/* Navigation */}
-      <nav className="border-b border-white/10 bg-[#020617]/80 backdrop-blur-md sticky top-0 z-50">
+      <nav className="border-b border-voice-border glass-strong sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <img src="/images/aurus-logo-app.png" alt="Aurus Logo" className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg" />

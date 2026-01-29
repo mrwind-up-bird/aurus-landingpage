@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de" className="scroll-smooth">
-      <body className={`${inter.className} bg-[#020617] text-slate-50 antialiased`} suppressHydrationWarning>
+      <body className={`${inter.className} bg-voice-bg text-slate-50 antialiased`} suppressHydrationWarning>
         {children}
       </body>
     </html>

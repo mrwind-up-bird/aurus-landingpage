@@ -12,7 +12,7 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 border-b border-white/10 bg-[#020617]/95 backdrop-blur-md">
+      <nav className="fixed w-full z-50 border-b border-voice-border glass-strong">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="/images/aurus-logo-app.png" alt="Aurus Logo" className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg" />
@@ -28,7 +28,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex items-center gap-3">
-            <a href="#download" className="hidden sm:inline-block bg-indigo-600 hover:bg-indigo-500 px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-indigo-500/20">
+            <a href="#download" className="hidden sm:inline-block bg-voice-primary hover:bg-voice-secondary px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-voice-primary/20">
               Download
             </a>
 
@@ -45,7 +45,7 @@ export default function LandingPage() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-white/10 bg-[#020617]/98 backdrop-blur-md">
+          <div className="md:hidden border-t border-voice-border glass-strong">
             <div className="px-4 py-4 space-y-3">
               <a
                 href="#features"
@@ -78,7 +78,7 @@ export default function LandingPage() {
               <a
                 href="#download"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block py-3 px-4 bg-indigo-600 text-white text-center rounded-lg font-bold hover:bg-indigo-500 transition-colors"
+                className="block py-3 px-4 bg-voice-primary text-white text-center rounded-lg font-bold hover:bg-voice-secondary transition-colors"
               >
                 Download
               </a>
@@ -95,10 +95,10 @@ export default function LandingPage() {
             alt="Aurus Hero Background"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/40 via-[#020617]/60 to-[#020617]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-voice-bg/40 via-voice-bg/60 to-voice-bg" />
         </div>
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-[10px] sm:text-xs font-bold mb-6 sm:mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-voice-primary/30 bg-voice-primary/10 text-voice-primary text-[10px] sm:text-xs font-bold mb-6 sm:mb-8 animate-fade-in">
             <Sparkles size={12} className="sm:w-3.5 sm:h-3.5" /> TAURI V2 + NEXT.JS 14 POWERED
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-8xl font-extrabold mb-6 sm:mb-8 tracking-tighter leading-[1.1] px-4">
@@ -112,7 +112,7 @@ export default function LandingPage() {
           </h1>
           <p className="text-base sm:text-xl md:text-2xl text-slate-400 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
             Hör auf zu tippen. Aurus ist dein nativer Desktop-Begleiter, der via{' '}
-            <kbd className="bg-slate-800 px-2 py-1 rounded text-xs sm:text-sm border border-slate-700 whitespace-nowrap">
+            <kbd className="bg-voice-surface px-2 py-1 rounded text-xs sm:text-sm border border-voice-border whitespace-nowrap">
               Cmd+Shift+V
             </kbd>{' '}
             zuhört und sofort handelt.
@@ -130,7 +130,7 @@ export default function LandingPage() {
       </header>
 
       {/* Feature Grid */}
-      <section id="features" className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900/50">
+      <section id="features" className="py-16 sm:py-24 px-4 sm:px-6 bg-voice-surface/30">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
           <div className="space-y-4">
             <div className="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400">
@@ -172,7 +172,7 @@ export default function LandingPage() {
               { title: "Translator", desc: "Echtzeit-Übersetzung in 12 Sprachen mit perfekter Grammatik.", icon: <Languages />, color: "text-pink-400" },
               { title: "Mental Mirror", desc: "Dein Voice-Journal. Reflektiere den Tag und erhalte KI-gestützte Insights.", icon: <Mic />, color: "text-indigo-400" }
             ].map((agent, i) => (
-              <div key={i} className="group p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900 border border-white/5 hover:border-indigo-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation">
+              <div key={i} className="group p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass hover:border-voice-primary/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation">
                 <div className={`${agent.color} mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform`}>
                   {React.cloneElement(agent.icon as React.ReactElement, { size: 28, className: "sm:w-8 sm:h-8" })}
                 </div>
@@ -186,28 +186,28 @@ export default function LandingPage() {
       </section>
 
       {/* Roadmap */}
-      <section id="roadmap" className="py-16 sm:py-24 px-4 sm:px-6 bg-indigo-600/5 relative overflow-hidden">
+      <section id="roadmap" className="py-16 sm:py-24 px-4 sm:px-6 bg-voice-primary/5 relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16 italic px-4">The Future is Voice.</h2>
           <div className="space-y-6 sm:space-y-8">
-            <div className="flex flex-col md:flex-row gap-6 sm:gap-8 p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900/80 border border-white/5 shadow-2xl">
+            <div className="flex flex-col md:flex-row gap-6 sm:gap-8 p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass-strong shadow-2xl">
               <div className="flex-1">
                 <h4 className="text-lg sm:text-xl font-bold mb-2 flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-indigo-500 rounded-full animate-pulse flex-shrink-0" />
+                  <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-voice-primary rounded-full animate-pulse flex-shrink-0" />
                   <span>Multi-Sprecher Erkennung</span>
                 </h4>
                 <p className="text-slate-400 text-sm sm:text-base">Aurus wird bald unterscheiden können, wer in einem Meeting spricht. Perfekt für automatische Protokolle.</p>
               </div>
               <div className="flex-1">
                 <h4 className="text-lg sm:text-xl font-bold mb-2 flex items-center gap-2">
-                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-purple-500 rounded-full animate-pulse flex-shrink-0" />
+                   <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-voice-secondary rounded-full animate-pulse flex-shrink-0" />
                    <span>Tool-Integrationen</span>
                 </h4>
                 <p className="text-slate-400 text-sm sm:text-base">Direkter Sync deiner Action Items zu Notion, Jira, Slack und Google Calendar.</p>
               </div>
             </div>
             <div className="text-center px-4">
-              <p className="text-indigo-400 font-mono text-xs sm:text-sm">COMING SOON: Eigene Voice-Clones für personalisierten Output</p>
+              <p className="text-voice-primary font-mono text-xs sm:text-sm">COMING SOON: Eigene Voice-Clones für personalisierten Output</p>
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function LandingPage() {
       {/* FAQ Section */}
       <section id="faq" className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center underline decoration-indigo-500 underline-offset-8 px-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center underline decoration-voice-primary underline-offset-8 px-4">
             Häufige Fragen
           </h2>
           <div className="space-y-4 sm:space-y-6">
@@ -252,7 +252,7 @@ export default function LandingPage() {
       </section>
 
       {/* Download Section */}
-      <section id="download" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-indigo-600/10 to-transparent">
+      <section id="download" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-voice-primary/10 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-4">Wähle deine Plattform</h2>
@@ -264,7 +264,7 @@ export default function LandingPage() {
               href="https://github.com/mrwind-up-bird/ai-voiceagent/releases/tag/v1.0.0"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900 border border-white/5 hover:border-indigo-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation"
+              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass hover:border-voice-primary/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation"
             >
               <div className="flex flex-col items-center text-center space-y-4 sm:space-y-6">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -273,13 +273,13 @@ export default function LandingPage() {
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold mb-2">macOS</h3>
                   <p className="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4">Intel & Apple Silicon</p>
-                  <div className="flex items-center justify-center gap-2 text-indigo-400 font-semibold text-xs sm:text-sm">
+                  <div className="flex items-center justify-center gap-2 text-voice-primary font-semibold text-xs sm:text-sm">
                     <Download size={14} className="sm:w-4 sm:h-4" />
                     <span>DMG / PKG</span>
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-indigo-500/0 group-hover:bg-indigo-500/5 transition-all -z-10" />
+              <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-voice-primary/0 group-hover:bg-voice-primary/5 transition-all -z-10" />
             </a>
 
             {/* Windows */}
@@ -287,7 +287,7 @@ export default function LandingPage() {
               href="https://github.com/mrwind-up-bird/ai-voiceagent/releases/tag/v1.0.0"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900 border border-white/5 hover:border-blue-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation"
+              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass hover:border-blue-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation"
             >
               <div className="flex flex-col items-center text-center space-y-4 sm:space-y-6">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -310,7 +310,7 @@ export default function LandingPage() {
               href="https://github.com/mrwind-up-bird/ai-voiceagent/releases/tag/v1.0.0"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-900 border border-white/5 hover:border-yellow-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation sm:col-span-2 md:col-span-1"
+              className="group relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl glass hover:border-yellow-500/50 transition-all active:scale-95 sm:hover:-translate-y-2 touch-manipulation sm:col-span-2 md:col-span-1"
             >
               <div className="flex flex-col items-center text-center space-y-4 sm:space-y-6">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -333,14 +333,14 @@ export default function LandingPage() {
           <div className="text-center mt-8 sm:mt-12 px-4">
             <p className="text-slate-500 text-sm">
               Benötigst du Hilfe bei der Installation?{' '}
-              <a href="#faq" className="text-indigo-400 hover:text-indigo-300 underline">Schau in die FAQ</a>
+              <a href="#faq" className="text-voice-primary hover:text-voice-secondary underline">Schau in die FAQ</a>
             </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 sm:py-16 border-t border-white/5 bg-slate-900/30">
+      <footer className="py-12 sm:py-16 border-t border-voice-border bg-voice-surface/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
             {/* Column 1: Logo & Brand */}

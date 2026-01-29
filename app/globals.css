@@ -4,8 +4,13 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 2, 6, 23;
-  --background-end-rgb: 2, 6, 23;
+  --background-start-rgb: 15, 15, 35;
+  --background-end-rgb: 15, 15, 35;
+  --voice-primary: #6366f1;
+  --voice-secondary: #8b5cf6;
+  --voice-bg: #0f0f23;
+  --voice-surface: #1a1a2e;
+  --voice-border: #2d2d44;
 }
 
 body {
@@ -56,15 +61,41 @@ html {
 
 /* Custom Scrollbar für den Dark Look */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #020617;
+  background: var(--voice-surface);
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 10px;
+  background: var(--voice-border);
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: var(--voice-primary);
+}
+
+/* Glassmorphismus-Effekte */
+.glass {
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 45, 68, 0.5);
+}
+
+.glass-strong {
+  background: rgba(15, 15, 35, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--voice-primary), var(--voice-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
