@@ -334,7 +334,7 @@ export default function LandingPage() {
           {/* Bottom Bar */}
           <div className="pt-6 sm:pt-8 border-t border-white/5 text-center">
             <p className="text-slate-500 text-xs sm:text-sm px-4">
-              © 2025 Aurus Voice Intelligence. Built with Passion and Rust.
+              © 2025 built by <a href="https://nyxcore.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">nyxCore</a>.
             </p>
           </div>
         </div>
